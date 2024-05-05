@@ -15,7 +15,7 @@ const errorHandler = (res) => {
 
 // This function is going to make a fetch request to the URL inside its parameter brackets (). Then it will turn the response (data it's getting back), saved here as res. The res.json will not be saved as posts and saved into the variable, arrayOfPosts
 const getPosts = () => {
-  fetch('https://randomuser.me/api/?results=15')
+  fetch('https://randomuser.me/api/?results=20')
   .then(errorHandler)
   .then(res => {
     return res.json()
